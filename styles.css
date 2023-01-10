@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+#open_sidebar {
+    position: fixed;
+    margin-top: 20px;
+    padding-left: 60px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav button {
+    padding: 8px 8px 8px 32px;
+    display: block;
+    font-size: 25px;
+    color: #818181;
+    border-radius: 5px;
+    border: none;
+    background-color: #111;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.social {
+    padding-top: 280px;
+}
+
+.social_contact img {
+    height: 40px;
+}
+
+.social_contact {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding-right: 5px;
+}
+
+.social label {
+    padding-left: 25px;
+    font-size: 30px;
+    font-style: oblique;
+    text-align: center;
+}
+
+.social ul {
+    padding-left: 0;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.content-section p {
+    text-transform: uppercase;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-style: oblique;
+    text-align: center;
+    color: skyblue;
+}
+
+#onlineshop {
+    width: 500px;
+    margin-left: 25%;
+}
+
+.content-section p span {
+    font-family: 'Creepster', cursive;
+    color: rgb(156, 255, 150);
+    font-size: larger;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: skyblue;
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 70px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: skyblue;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: rgb(117, 155, 3);
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+    color: rgb(117, 155, 3);
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: skyblue;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+}
+}
+}
+}
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(81, 81, 223);
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: skyblue;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    padding-bottom: 50px;
+    margin: 50px auto auto 350px;
+    font-size: 1.75em;
+}
+
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}

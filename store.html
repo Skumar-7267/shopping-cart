@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shopping Cart </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="store.js" async></script>
+</head>
+
+<body id="online_shop">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="open_sidebar">&#9776; open</span>
+
+    <div id="mySidenav" class="sidenav">
+        <div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a> </div>
+        <div>
+            <button onclick="theme()" class="theme_button">Theme</button>
+        </div>
+        <div class="social">
+            <label for="social"> Social Media</label>
+            <ul class="social_contact">
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="Images/YouTube Logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="Images/Facebook Logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="www.youtube.com" target="_blank">
+                        <img src="Images/Spotify Logo.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="container content-section">
+
+        <p>Feel Free to shop with US. <br /> We are not only <span> BUT </span> we are <span> UNIQUE.</span>
+        </p>
+        <img src="Images/onlineshop.jpg" alt="Online Shopping" id="onlineshop">
+
+        <h2 class="section-header">PRODUCTS</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Camera CANON</span>
+                <img class="shop-item-image" src="https://in.canon/media/image/2020/10/12/ce5285aeefb24966b324099157013dc2_M50MII_Black_FrontSlantLeft_M15-45-.png" title="Camera Canon">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">₹60995.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">External SSD</span>
+                <img class="shop-item-image" src="https://images.samsung.com/is/image/samsung/in-portable-ssd-t7-non-touch-mu-pc1t0r-ww-rperspectivered-thumb-260234726?$480_480_PNG$" title="External SSD">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">₹5599.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Smart Watch</span>
+                <img class="shop-item-image" src="https://m.media-amazon.com/images/I/61gscZYmaoL._SL1377_.jpg" title="Smart Watch">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">₹3499.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">PC Gamer</span>
+                <img class="shop-item-image" src="https://asset.msi.com/resize/image/global/product/product_1652084089f186edc14f9d018b77a37b5aee4f5a5a.png62405b38c58fe0f07fcef2367d8a9ba1/400.png" title="PC Gamer">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">₹52299.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">IPhone 14 Pro max</span>
+                <img class="shop-item-image" src="https://media.croma.com/image/upload/v1662703416/Croma%20Assets/Communication/Mobiles/Images/261991_hhfa33.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">₹149999.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Smart TV</span>
+                <img class="shop-item-image" src="https://i01.appmifile.com/webfile/globalimg/in/cms/C26D1A72-E8D5-86A7-1649-DB7DA01A6675.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">₹13998.90</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">₹0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button" id="purchase"> PURCHASE</button>
+    </section>
+
+</body>
+
+</html>
